@@ -1,0 +1,13 @@
+can search for word or concept
+  returns term with definition as the view data
+    styled: term is header, definiton is paragraph, references are links 
+      optional: extend with more description
+  includes links to closely related terms and ideas
+    click on link to term and have it as the main view
+
+database support
+  can add and remove from database
+
+*maybe:
+  seperate pages for certain related topics i.e. Javascript section, node section
+  

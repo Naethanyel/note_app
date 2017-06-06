@@ -1,0 +1,21 @@
+<html ng-app="noteApp"> <!--a directive is a special attribute on the html element-->
+	<head>
+		<title>my_hub</title>
+    <link href='/assets/css/index.css' type='text/css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
+	</head>
+	<body ng-controller="mainController"> <!-- could be a div -->
+    Search by term: <input type="text" ng-model="searchTerm"/><!-- says bind this element  to a specific variable in the scope -->
+    
+    <div ng-repeat="term in terms | filter:{name: searchTerm}">
+      <h2>
+        {{ term.name }}
+      </h2>
+      <p>
+        {{ term.description }}
+      </p>
+    <div>
+    <script src="/assets/js/client.js"></script>
+	</body>
+
+</html>
